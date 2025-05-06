@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="jor_chart_template_standard" model="account.chart.template">
+        <field name="property_account_receivable_id" ref="jo_account_100201"/>
+        <field name="property_account_payable_id" ref="jo_account_200101"/>
+        <field name="property_account_expense_categ_id" ref="jo_account_500200"/>
+        <field name="property_account_income_categ_id" ref="jo_account_200401"/>
+        <field name="expense_currency_exchange_account_id" ref="jo_account_500903"/>
+        <field name="income_currency_exchange_account_id" ref="jo_account_400301"/>
+        <field name="default_pos_receivable_account_id" ref="jo_account_100202"/>
+    </record>
+</odoo>

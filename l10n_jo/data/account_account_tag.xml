@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+  <record id="account_account_tag_plus_2_a_base" model="account.account.tag">
+    <field name="name">+2a (Base)</field>
+    <field name="applicability">accounts</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+
+  <record id="account_account_tag_minus_2_a_base" model="account.account.tag">
+    <field name="name">-2a (Base)</field>
+    <field name="applicability">accounts</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+
+  <record id="account_account_tag_plus_2_a_tax" model="account.account.tag">
+    <field name="name">+2a (Tax)</field>
+    <field name="applicability">taxes</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+
+  <record id="account_account_tag_minus_2_a_tax" model="account.account.tag">
+    <field name="name">-2a (Tax)</field>
+    <field name="applicability">taxes</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+
+  <record id="account_account_tag_plus_2_b_base" model="account.account.tag">
+    <field name="name">+2b (Base)</field>
+    <field name="applicability">accounts</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+
+  <record id="account_account_tag_minus_2_b_base" model="account.account.tag">
+    <field name="name">-2b (Base)</field>
+    <field name="applicability">accounts</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+
+  <record id="account_account_tag_plus_2_b_tax" model="account.account.tag">
+    <field name="name">+2b (Tax)</field>
+    <field name="applicability">taxes</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+
+  <record id="account_account_tag_minus_2_b_tax" model="account.account.tag">
+    <field name="name">-2b (Tax)</field>
+    <field name="applicability">taxes</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+
+  <record id="account_account_tag_plus_2_c_base" model="account.account.tag">
+    <field name="name">+2c (Base)</field>
+    <field name="applicability">accounts</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+
+  <record id="account_account_tag_minus_2_c_base" model="account.account.tag">
+    <field name="name">-2c (Base)</field>
+    <field name="applicability">accounts</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+
+  <record id="account_account_tag_plus_2_c_tax" model="account.account.tag">
+    <field name="name">+2c (Tax)</field>
+    <field name="applicability">taxes</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+
+  <record id="account_account_tag_minus_2_c_tax" model="account.account.tag">
+    <field name="name">-2c (Tax)</field>
+    <field name="applicability">taxes</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+
+  <record id="account_account_tag_plus_2_d_base" model="account.account.tag">
+    <field name="name">+2d (Base)</field>
+    <field name="applicability">accounts</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+
+  <record id="account_account_tag_minus_2_d_base" model="account.account.tag">
+    <field name="name">-2d (Base)</field>
+    <field name="applicability">accounts</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+
+  <record id="account_account_tag_plus_2_d_tax" model="account.account.tag">
+    <field name="name">+2d (Tax)</field>
+    <field name="applicability">taxes</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+
+  <record id="account_account_tag_minus_2_d_tax" model="account.account.tag">
+    <field name="name">-2d (Tax)</field>
+    <field name="applicability">taxes</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+
+  <record id="account_account_tag_plus_3_a_base" model="account.account.tag">
+    <field name="name">+3a (Base)</field>
+    <field name="applicability">accounts</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_minus_3_a_base" model="account.account.tag">
+    <field name="name">-3a (Base)</field>
+    <field name="applicability">accounts</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_plus_3_a_tax" model="account.account.tag">
+    <field name="name">+3a (Tax)</field>
+    <field name="applicability">taxes</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_minus_3_a_tax" model="account.account.tag">
+    <field name="name">-3a (Tax)</field>
+    <field name="applicability">taxes</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_plus_3_b_base" model="account.account.tag">
+    <field name="name">+3b (Base)</field>
+    <field name="applicability">accounts</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_minus_3_b_base" model="account.account.tag">
+    <field name="name">-3b (Base)</field>
+    <field name="applicability">accounts</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_plus_3_b_tax" model="account.account.tag">
+    <field name="name">+3b (Tax)</field>
+    <field name="applicability">taxes</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_minus_3_b_tax" model="account.account.tag">
+    <field name="name">-3b (Tax)</field>
+    <field name="applicability">taxes</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_plus_3_c_base" model="account.account.tag">
+    <field name="name">+3c (Base)</field>
+    <field name="applicability">accounts</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_minus_3_c_base" model="account.account.tag">
+    <field name="name">-3c (Base)</field>
+    <field name="applicability">accounts</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_plus_3_c_tax" model="account.account.tag">
+    <field name="name">+3c (Tax)</field>
+    <field name="applicability">taxes</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_minus_3_c_tax" model="account.account.tag">
+    <field name="name">-3c (Tax)</field>
+    <field name="applicability">taxes</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_plus_3_d_base" model="account.account.tag">
+    <field name="name">+3d (Base)</field>
+    <field name="applicability">accounts</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_minus_3_d_base" model="account.account.tag">
+    <field name="name">-3d (Base)</field>
+    <field name="applicability">accounts</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_plus_3_d_tax" model="account.account.tag">
+    <field name="name">+3d (Tax)</field>
+    <field name="applicability">taxes</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_minus_3_d_tax" model="account.account.tag">
+    <field name="name">-3d (Tax)</field>
+    <field name="applicability">taxes</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+
+  <record id="account_account_tag_plus_4_base" model="account.account.tag">
+    <field name="name">+4 (Base)</field>
+    <field name="applicability">accounts</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_minus_4_base" model="account.account.tag">
+    <field name="name">-4 (Base)</field>
+    <field name="applicability">accounts</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_plus_4_tax" model="account.account.tag">
+    <field name="name">+4 (Tax)</field>
+    <field name="applicability">taxes</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_minus_4_tax" model="account.account.tag">
+    <field name="name">-4 (Tax)</field>
+    <field name="applicability">taxes</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+
+
+  <record id="account_account_tag_plus_5_base" model="account.account.tag">
+    <field name="name">+5 (Base)</field>
+    <field name="applicability">accounts</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_minus_5_base" model="account.account.tag">
+    <field name="name">-5 (Base)</field>
+    <field name="applicability">accounts</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_plus_5_tax" model="account.account.tag">
+    <field name="name">+5 (Tax)</field>
+    <field name="applicability">taxes</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_minus_5_tax" model="account.account.tag">
+    <field name="name">-5 (Tax)</field>
+    <field name="applicability">taxes</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+
+
+  <record id="account_account_tag_plus_6_a_base" model="account.account.tag">
+    <field name="name">+6a (Base)</field>
+    <field name="applicability">accounts</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_minus_6_a_base" model="account.account.tag">
+    <field name="name">-6a (Base)</field>
+    <field name="applicability">accounts</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_plus_6_a_tax" model="account.account.tag">
+    <field name="name">+6a (Tax)</field>
+    <field name="applicability">taxes</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_minus_6_a_tax" model="account.account.tag">
+    <field name="name">-6a (Tax)</field>
+    <field name="applicability">taxes</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_plus_6_b_base" model="account.account.tag">
+    <field name="name">+6b (Base)</field>
+    <field name="applicability">accounts</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_minus_6_b_base" model="account.account.tag">
+    <field name="name">-6b (Base)</field>
+    <field name="applicability">accounts</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_plus_6_b_tax" model="account.account.tag">
+    <field name="name">+6b (Tax)</field>
+    <field name="applicability">taxes</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_minus_6_b_tax" model="account.account.tag">
+    <field name="name">-6b (Tax)</field>
+    <field name="applicability">taxes</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_plus_6_c_base" model="account.account.tag">
+    <field name="name">+6c (Base)</field>
+    <field name="applicability">accounts</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_minus_6_c_base" model="account.account.tag">
+    <field name="name">-6c (Base)</field>
+    <field name="applicability">accounts</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_plus_6_c_tax" model="account.account.tag">
+    <field name="name">+6c (Tax)</field>
+    <field name="applicability">taxes</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_minus_6_c_tax" model="account.account.tag">
+    <field name="name">-6c (Tax)</field>
+    <field name="applicability">taxes</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_plus_6_d_base" model="account.account.tag">
+    <field name="name">+6d (Base)</field>
+    <field name="applicability">accounts</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_minus_6_d_base" model="account.account.tag">
+    <field name="name">-6d (Base)</field>
+    <field name="applicability">accounts</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_plus_6_d_tax" model="account.account.tag">
+    <field name="name">+6d (Tax)</field>
+    <field name="applicability">taxes</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_minus_6_d_tax" model="account.account.tag">
+    <field name="name">-6d (Tax)</field>
+    <field name="applicability">taxes</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+
+
+  <record id="account_account_tag_plus_7_base" model="account.account.tag">
+    <field name="name">+7 (Base)</field>
+    <field name="applicability">accounts</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_minus_7_base" model="account.account.tag">
+    <field name="name">-7 (Base)</field>
+    <field name="applicability">accounts</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_plus_7_tax" model="account.account.tag">
+    <field name="name">+7 (Tax)</field>
+    <field name="applicability">taxes</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_minus_7_tax" model="account.account.tag">
+    <field name="name">-7 (Tax)</field>
+    <field name="applicability">taxes</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+
+
+  <record id="account_account_tag_plus_8_base" model="account.account.tag">
+    <field name="name">+8 (Base)</field>
+    <field name="applicability">accounts</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_minus_8_base" model="account.account.tag">
+    <field name="name">-8 (Base)</field>
+    <field name="applicability">accounts</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_plus_8_tax" model="account.account.tag">
+    <field name="name">+8 (Tax)</field>
+    <field name="applicability">taxes</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_minus_8_tax" model="account.account.tag">
+    <field name="name">-8 (Tax)</field>
+    <field name="applicability">taxes</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+
+
+
+  <record id="account_account_tag_plus_9_base" model="account.account.tag">
+    <field name="name">+9 (Base)</field>
+    <field name="applicability">accounts</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_minus_9_base" model="account.account.tag">
+    <field name="name">-9 (Base)</field>
+    <field name="applicability">accounts</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_plus_9_tax" model="account.account.tag">
+    <field name="name">+9 (Tax)</field>
+    <field name="applicability">taxes</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_minus_9_tax" model="account.account.tag">
+    <field name="name">-9 (Tax)</field>
+    <field name="applicability">taxes</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+
+
+
+  <record id="account_account_tag_plus_10_base" model="account.account.tag">
+    <field name="name">+10 (Base)</field>
+    <field name="applicability">accounts</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_minus_10_base" model="account.account.tag">
+    <field name="name">-10 (Base)</field>
+    <field name="applicability">accounts</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_plus_10_tax" model="account.account.tag">
+    <field name="name">+10 (Tax)</field>
+    <field name="applicability">taxes</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_minus_10_tax" model="account.account.tag">
+    <field name="name">-10 (Tax)</field>
+    <field name="applicability">taxes</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+
+
+  <record id="account_account_tag_plus_11_base" model="account.account.tag">
+    <field name="name">+11 (Base)</field>
+    <field name="applicability">accounts</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_minus_11_base" model="account.account.tag">
+    <field name="name">-11 (Base)</field>
+    <field name="applicability">accounts</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_plus_11_tax" model="account.account.tag">
+    <field name="name">+11 (Tax)</field>
+    <field name="applicability">taxes</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+  <record id="account_account_tag_minus_11_tax" model="account.account.tag">
+    <field name="name">-11 (Tax)</field>
+    <field name="applicability">taxes</field>
+    <field name="country_id" ref="base.jo"/>
+  </record>
+
+
+</odoo>

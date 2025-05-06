@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="jo_standard_purchase_16" model="account.tax.template">
+    <field name="name">16% (Jordan)</field>
+    <field name="type_tax_use">purchase</field>
+    <field name="amount">16.0</field>
+    <field name="amount_type">percent</field>
+    <field name="description">16% (Jordan)</field>
+    <field name="tax_group_id" ref="jo_tax_group_16"/>
+    <field name="chart_template_id" ref="jor_chart_template_standard"/>
+    <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('account_account_tag_plus_2_a_base')]
+            }),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('jo_account_200901'),
+                'tag_ids': [ref('account_account_tag_plus_2_a_tax')]})
+        ]"/>
+    <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('account_account_tag_minus_2_a_base')]}),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('jo_account_200901'),
+                'tag_ids': [ref('account_account_tag_minus_2_a_tax')]})
+        ]"/>
+  </record>
+
+  <record id="jo_standard_purchase_10" model="account.tax.template">
+    <field name="name">10% (Jordan)</field>
+    <field name="type_tax_use">purchase</field>
+    <field name="amount">10.0</field>
+    <field name="amount_type">percent</field>
+    <field name="description">16% (Jordan)</field>
+    <field name="tax_group_id" ref="jo_tax_group_10"/>
+    <field name="chart_template_id" ref="jor_chart_template_standard"/>
+    <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('account_account_tag_plus_2_b_base')]
+            }),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('jo_account_200901'),
+                'tag_ids': [ref('account_account_tag_plus_2_b_tax')]})
+        ]"/>
+    <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('account_account_tag_minus_2_b_base')]}),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('jo_account_200901'),
+                'tag_ids': [ref('account_account_tag_minus_2_b_tax')]})
+        ]"/>
+  </record>
+
+  <record id="jo_standard_purchase_4" model="account.tax.template">
+    <field name="name">4% (Jordan)</field>
+    <field name="type_tax_use">purchase</field>
+    <field name="amount">4.0</field>
+    <field name="amount_type">percent</field>
+    <field name="description">4% (Jordan)</field>
+    <field name="tax_group_id" ref="jo_tax_group_4"/>
+    <field name="chart_template_id" ref="jor_chart_template_standard"/>
+    <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('account_account_tag_plus_2_c_base')]
+            }),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('jo_account_200901'),
+                'tag_ids': [ref('account_account_tag_plus_2_c_tax')]})
+        ]"/>
+    <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('account_account_tag_minus_2_c_base')]}),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('jo_account_200901'),
+                'tag_ids': [ref('account_account_tag_minus_2_c_tax')]})
+        ]"/>
+  </record>
+
+  <record id="jo_standard_purchase_other" model="account.tax.template">
+    <field name="name">0% O (Jordan)</field>
+    <field name="type_tax_use">purchase</field>
+    <field name="amount">0</field>
+    <field name="amount_type">percent</field>
+    <field name="description">0% Other (Jordan)</field>
+    <field name="tax_group_id" ref="jo_tax_group_0"/>
+    <field name="chart_template_id" ref="jor_chart_template_standard"/>
+    <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('account_account_tag_plus_2_d_base')]
+            }),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('jo_account_200901'),
+                'tag_ids': [ref('account_account_tag_plus_2_d_tax')]})
+        ]"/>
+    <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('account_account_tag_minus_2_d_base')]}),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('jo_account_200901'),
+                'tag_ids': [ref('account_account_tag_minus_2_d_tax')]})
+        ]"/>
+  </record>
+
+  <record id="jo_standard_purchase_import_16" model="account.tax.template">
+    <field name="name">16% EX (Jordan)</field>
+    <field name="type_tax_use">purchase</field>
+    <field name="amount">16.0</field>
+    <field name="amount_type">percent</field>
+    <field name="description">16% Import (Jordan)</field>
+    <field name="tax_group_id" ref="jo_tax_group_16"/>
+    <field name="chart_template_id" ref="jor_chart_template_standard"/>
+    <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('account_account_tag_plus_3_a_base')]
+            }),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('jo_account_200901'),
+                'tag_ids': [ref('account_account_tag_plus_3_a_tax')]})
+        ]"/>
+    <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('account_account_tag_minus_3_a_base')]}),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('jo_account_200901'),
+                'tag_ids': [ref('account_account_tag_minus_3_a_tax')]})
+        ]"/>
+  </record>
+
+  <record id="jo_standard_purchase_import_10" model="account.tax.template">
+    <field name="name">10% EX (Jordan)</field>
+    <field name="type_tax_use">purchase</field>
+    <field name="amount">10.0</field>
+    <field name="amount_type">percent</field>
+    <field name="description">10% Import (Jordan)</field>
+    <field name="tax_group_id" ref="jo_tax_group_10"/>
+    <field name="chart_template_id" ref="jor_chart_template_standard"/>
+    <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('account_account_tag_plus_3_b_base')]
+            }),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('jo_account_200901'),
+                'tag_ids': [ref('account_account_tag_plus_3_b_tax')]})
+        ]"/>
+    <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('account_account_tag_minus_3_b_base')]}),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('jo_account_200901'),
+                'tag_ids': [ref('account_account_tag_minus_3_b_tax')]})
+        ]"/>
+  </record>
+
+  <record id="jo_standard_purchase_import_4" model="account.tax.template">
+    <field name="name">4%  EX (Jordan)</field>
+    <field name="type_tax_use">purchase</field>
+    <field name="amount">4.0</field>
+    <field name="amount_type">percent</field>
+    <field name="description">4% Import (Jordan)</field>
+    <field name="tax_group_id" ref="jo_tax_group_4"/>
+    <field name="chart_template_id" ref="jor_chart_template_standard"/>
+    <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('account_account_tag_plus_3_c_base')]
+            }),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('jo_account_200901'),
+                'tag_ids': [ref('account_account_tag_plus_3_c_tax')]})
+        ]"/>
+    <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('account_account_tag_minus_3_c_base')]}),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('jo_account_200901'),
+                'tag_ids': [ref('account_account_tag_minus_3_c_tax')]})
+        ]"/>
+  </record>
+
+  <record id="jo_standard_purchase_import_other" model="account.tax.template">
+    <field name="name">0% EX O (Jordan)</field>
+    <field name="type_tax_use">purchase</field>
+    <field name="amount">0</field>
+    <field name="amount_type">percent</field>
+    <field name="description">0% Import Other (Jordan)</field>
+    <field name="tax_group_id" ref="jo_tax_group_0"/>
+    <field name="chart_template_id" ref="jor_chart_template_standard"/>
+    <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('account_account_tag_plus_3_d_base')]
+            }),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('jo_account_200901'),
+                'tag_ids': [ref('account_account_tag_plus_3_d_tax')]})
+        ]"/>
+    <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('account_account_tag_minus_3_d_base')]}),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('jo_account_200901'),
+                'tag_ids': [ref('account_account_tag_minus_3_d_tax')]})
+        ]"/>
+  </record>
+
+  <record id="jo_standard_purchase_import_deferred" model="account.tax.template">
+    <field name="name">0% EX DS (Jordan)</field>
+    <field name="type_tax_use">purchase</field>
+    <field name="amount">0</field>
+    <field name="amount_type">percent</field>
+    <field name="description">0% Imports Deferred Supply (Jordan)</field>
+    <field name="tax_group_id" ref="jo_tax_group_0"/>
+    <field name="chart_template_id" ref="jor_chart_template_standard"/>
+    <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('account_account_tag_plus_4_base')]
+            }),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('jo_account_200901'),
+                'tag_ids': [ref('account_account_tag_plus_4_tax')]})
+        ]"/>
+    <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('account_account_tag_minus_4_base')]}),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('jo_account_200901'),
+                'tag_ids': [ref('account_account_tag_minus_4_tax')]})
+        ]"/>
+  </record>
+
+  <record id="eg_zero_purchase_exempted" model="account.tax.template">
+    <field name="name">0% EXT (Jordan)</field>
+    <field name="type_tax_use">purchase</field>
+    <field name="amount">0</field>
+    <field name="amount_type">percent</field>
+    <field name="description">Exempt (Jordan)</field>
+    <field name="tax_group_id" ref="jo_tax_group_exempt"/>
+    <field name="chart_template_id" ref="jor_chart_template_standard"/>
+    <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('account_account_tag_plus_5_base')]
+            }),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('jo_account_200901'),
+                'tag_ids': [ref('account_account_tag_plus_5_tax')]})
+        ]"/>
+    <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('account_account_tag_minus_5_base')]}),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('jo_account_200901'),
+                'tag_ids': [ref('account_account_tag_minus_5_tax')]})
+        ]"/>
+  </record>
+
+  <record id="jo_standard_sale_16" model="account.tax.template">
+    <field name="name">16% (Jordan)</field>
+    <field name="type_tax_use">sale</field>
+    <field name="amount">16.0</field>
+    <field name="amount_type">percent</field>
+    <field name="description">16% (Jordan)</field>
+    <field name="tax_group_id" ref="jo_tax_group_16"/>
+    <field name="chart_template_id" ref="jor_chart_template_standard"/>
+    <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('account_account_tag_plus_6_a_base')]
+            }),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('jo_account_200901'),
+                'tag_ids': [ref('account_account_tag_plus_6_a_tax')]})
+        ]"/>
+    <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('account_account_tag_minus_6_a_base')]}),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('jo_account_200901'),
+                'tag_ids': [ref('account_account_tag_minus_6_a_tax')]})
+        ]"/>
+  </record>
+
+  <record id="jo_standard_sale_10" model="account.tax.template">
+    <field name="name">10% (Jordan)</field>
+    <field name="type_tax_use">sale</field>
+    <field name="amount">10.0</field>
+    <field name="amount_type">percent</field>
+    <field name="description">10% (Jordan)</field>
+    <field name="tax_group_id" ref="jo_tax_group_10"/>
+    <field name="chart_template_id" ref="jor_chart_template_standard"/>
+    <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('account_account_tag_plus_6_b_base')]
+            }),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('jo_account_200901'),
+                'tag_ids': [ref('account_account_tag_plus_6_b_tax')]})
+        ]"/>
+    <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('account_account_tag_minus_6_b_base')]}),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('jo_account_200901'),
+                'tag_ids': [ref('account_account_tag_minus_6_b_tax')]})
+        ]"/>
+  </record>
+
+  <record id="jo_standard_sale_4" model="account.tax.template">
+    <field name="name">4% (Jordan)</field>
+    <field name="type_tax_use">sale</field>
+    <field name="amount">4.0</field>
+    <field name="amount_type">percent</field>
+    <field name="description">4% (Jordan)</field>
+    <field name="tax_group_id" ref="jo_tax_group_4"/>
+    <field name="chart_template_id" ref="jor_chart_template_standard"/>
+    <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('account_account_tag_plus_6_c_base')]
+            }),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('jo_account_200901'),
+                'tag_ids': [ref('account_account_tag_plus_6_c_tax')]})
+        ]"/>
+    <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('account_account_tag_minus_6_c_base')]}),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('jo_account_200901'),
+                'tag_ids': [ref('account_account_tag_minus_6_c_tax')]})
+        ]"/>
+  </record>
+
+  <record id="jo_standard_sale_other" model="account.tax.template">
+    <field name="name">0% O (Jordan)</field>
+    <field name="type_tax_use">sale</field>
+    <field name="amount">0</field>
+    <field name="amount_type">percent</field>
+    <field name="description">0% Other (Jordan)</field>
+    <field name="tax_group_id" ref="jo_tax_group_0"/>
+    <field name="chart_template_id" ref="jor_chart_template_standard"/>
+    <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('account_account_tag_plus_6_d_base')]
+            }),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('jo_account_200901'),
+                'tag_ids': [ref('account_account_tag_plus_6_d_tax')]})
+        ]"/>
+    <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('account_account_tag_minus_6_d_base')]}),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('jo_account_200901'),
+                'tag_ids': [ref('account_account_tag_minus_6_d_tax')]})
+        ]"/>
+  </record>
+
+  <record id="jo_zero_sale_0" model="account.tax.template">
+    <field name="name">0% (Jordan)</field>
+    <field name="type_tax_use">sale</field>
+    <field name="amount">0</field>
+    <field name="amount_type">percent</field>
+    <field name="description">0% (Jordan)</field>
+    <field name="tax_group_id" ref="jo_tax_group_0"/>
+    <field name="chart_template_id" ref="jor_chart_template_standard"/>
+    <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('account_account_tag_plus_7_base')]
+            }),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('jo_account_200901'),
+                'tag_ids': [ref('account_account_tag_plus_7_tax')]})
+        ]"/>
+    <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('account_account_tag_minus_7_base')]}),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('jo_account_200901'),
+                'tag_ids': [ref('account_account_tag_minus_7_tax')]})
+        ]"/>
+  </record>
+
+  <record id="jo_zero_sale_export" model="account.tax.template">
+    <field name="name">0% EX (Jordan)</field>
+    <field name="type_tax_use">sale</field>
+    <field name="amount">0</field>
+    <field name="amount_type">percent</field>
+    <field name="description">0% Export (Jordan)</field>
+    <field name="tax_group_id" ref="jo_tax_group_0"/>
+    <field name="chart_template_id" ref="jor_chart_template_standard"/>
+    <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('account_account_tag_plus_8_base')]
+            }),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('jo_account_200901'),
+                'tag_ids': [ref('account_account_tag_plus_8_tax')]})
+        ]"/>
+    <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('account_account_tag_minus_8_base')]}),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('jo_account_200901'),
+                'tag_ids': [ref('account_account_tag_minus_8_tax')]})
+        ]"/>
+  </record>
+
+  <record id="jo_zero_sale_no_tax" model="account.tax.template">
+    <field name="name">0% SNT (Jordan)</field>
+    <field name="type_tax_use">sale</field>
+    <field name="amount">0</field>
+    <field name="amount_type">percent</field>
+    <field name="description">0% Not Subject To Tax (Jordan)</field>
+    <field name="tax_group_id" ref="jo_tax_group_0"/>
+    <field name="chart_template_id" ref="jor_chart_template_standard"/>
+    <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('account_account_tag_plus_9_base')]
+            }),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('jo_account_200901'),
+                'tag_ids': [ref('account_account_tag_plus_9_tax')]})
+        ]"/>
+    <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('account_account_tag_minus_9_base')]}),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('jo_account_200901'),
+                'tag_ids': [ref('account_account_tag_minus_9_tax')]})
+        ]"/>
+  </record>
+
+  <record id="jo_zero_sale_exempted" model="account.tax.template">
+    <field name="name">0% EXT LS (Jordan)</field>
+    <field name="type_tax_use">sale</field>
+    <field name="amount">0</field>
+    <field name="amount_type">percent</field>
+    <field name="description">Exempt Local (Jordan)</field>
+    <field name="tax_group_id" ref="jo_tax_group_exempt"/>
+    <field name="chart_template_id" ref="jor_chart_template_standard"/>
+    <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('account_account_tag_plus_10_base')]
+            }),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('jo_account_200901'),
+                'tag_ids': [ref('account_account_tag_plus_10_tax')]})
+        ]"/>
+    <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('account_account_tag_minus_10_base')]}),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('jo_account_200901'),
+                'tag_ids': [ref('account_account_tag_minus_10_tax')]})
+        ]"/>
+  </record>
+
+
+  <record id="jo_zero_sale_non_deductible" model="account.tax.template">
+    <field name="name">0% NDT (Jordan)</field>
+    <field name="type_tax_use">sale</field>
+    <field name="amount">0</field>
+    <field name="amount_type">percent</field>
+    <field name="description">Non-Deductible Tax (For Exempted) (Jordan)</field>
+    <field name="tax_group_id" ref="jo_tax_group_0"/>
+    <field name="chart_template_id" ref="jor_chart_template_standard"/>
+    <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('account_account_tag_plus_11_base')]
+            }),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('jo_account_200901'),
+                'tag_ids': [ref('account_account_tag_plus_11_tax')]})
+        ]"/>
+    <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('account_account_tag_minus_11_base')]}),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('jo_account_200901'),
+                'tag_ids': [ref('account_account_tag_minus_11_tax')]})
+        ]"/>
+  </record>
+
+
+
+</odoo>
