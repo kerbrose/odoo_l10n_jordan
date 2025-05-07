@@ -51,7 +51,7 @@
       <field name="model">account.move</field>
       <field name="inherit_id" ref="account.view_account_invoice_filter"/>
       <field name="arch" type="xml">
-        <xpath expr="//search/group/filter[@name='groupy_by_journal']" position="after">
+        <xpath expr="//search//group//filter" position="after">
           <filter name="l10n_jo_edi_state" context="{'group_by': 'l10n_jo_edi_state'}"/>
         </xpath>
       </field>

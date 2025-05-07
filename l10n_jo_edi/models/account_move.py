@@ -5,6 +5,8 @@ from werkzeug.urls import url_encode
 
 from odoo import _, api, fields, models
 from odoo.exceptions import ValidationError
+from odoo.tools.sql import column_exists, create_column
+
 
 JOFOTARA_URL = "https://backend.jofotara.gov.jo/core/invoices/"
 
@@ -227,3 +229,13 @@ class AccountMove(models.Model):
                 body=_("E-invoice (JoFotara) submitted successfully."),
                 attachment_ids=self.l10n_jo_edi_xml_attachment_id.ids,
             )
+
+    def _auto_init(self):
+        if not column_exists(self.env.cr, "stock_move", "l10n_jo_edi_uuid"):
+            create_column(self.env.cr, "stock_move", "l10n_jo_edi_uuid", "varchar")
+            self.env.cr.execute("""
+                UPDATE stock_move move
+                SET l10n_jo_edi_uuid = gen_random_uuid()
+                WHERE l10n_jo_edi_uuid IS NULL
+                """)
+        return super()._auto_init()
